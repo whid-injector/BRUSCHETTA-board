@@ -1,0 +1,696 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  22, 17, 168, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_Main,IDC_MYICON,14,9,20,20
+    LTEXT           "PramFrame Version 1.0",IDC_STATIC,49,10,91,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,61,39,30,11,WS_GROUP
+END
+
+IDD_SpiUartI2cDbg DIALOGEX 0, 0, 521, 470
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "SPI/I2C Debug"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "关闭设备",IDC_CloseDevice,373,4,67,16
+    EDITTEXT        IDC_InforShow,6,343,510,103,ES_MULTILINE | ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "清空输出信息",IDC_ClearInfor,412,449,78,16
+    LTEXT           "设备列表:",IDC_STATIC,6,8,38,8
+    COMBOBOX        IDC_ObjList,48,6,238,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "刷新设备列表",IDC_RefreshObjList,290,4,67,16
+    PUSHBUTTON      "打开设备",IDC_OpenDevice,443,4,67,16
+    GROUPBOX        "SPI",IDC_STATIC,6,39,510,136
+    PUSHBUTTON      "SPI片选控制(C1)",IDC_CMD_SPICsCtrl,443,66,67,16
+    PUSHBUTTON      "SPI读写(C2)",IDC_CMD_SPIStream,13,118,60,16
+    PUSHBUTTON      "SPI块读(C3)",IDC_CMD_BulkSpiIn,13,102,60,16
+    PUSHBUTTON      "SPI块写(C4)",IDC_CMD_BulkSpiOut,13,86,60,16
+    COMBOBOX        IDC_SpiCfg_Mode,35,50,35,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SpiCfg_Clock,100,50,37,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SpiCfg_ByteBitOrder,178,50,31,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "ActiveCS RW Delay(us):",IDC_STATIC,171,70,88,8
+    EDITTEXT        IDC_SpiCfg_ActiveDelay,263,68,25,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SpiCfg_ChipIndex,68,68,37,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "EnableCS",IDC_EnableCS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,70,44,8
+    COMBOBOX        IDC_SpiCsStatus,110,68,58,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "DeactiveCS RW Delay(us):(us):",IDC_STATIC,294,70,117,8
+    EDITTEXT        IDC_SpiCfg_DelayDeactive,416,68,25,12,ES_AUTOHSCROLL
+    RTEXT           "输出长度:",IDC_STATIC,78,86,37,8
+    EDITTEXT        IDC_SpiOut,118,86,393,40,ES_MULTILINE | ES_UPPERCASE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    RTEXT           "输入长度:",IDC_STATIC,78,130,37,8
+    EDITTEXT        IDC_SpiIn,118,130,393,40,ES_MULTILINE | ES_UPPERCASE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_SpiOutLen,78,97,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SpiInLen,78,139,33,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "初始化SPI(C0)",IDC_CMD_InitSPI,443,48,67,16
+    RTEXT           "SpiOutInInterTime(us):",IDC_STATIC,208,52,89,8
+    EDITTEXT        IDC_SpiCfg_OutInIntervalT,299,50,22,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SpiCfg_CS1Polarity,322,50,52,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Mode:",IDC_STATIC,12,52,20,8
+    RTEXT           "Clock:",IDC_STATIC,73,52,25,8
+    RTEXT           "BitOrder:",IDC_STATIC,138,52,38,8
+    COMBOBOX        IDC_SpiCfg_CS2Polarity,377,50,64,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "I2C",IDC_STATIC,6,178,510,98
+    PUSHBUTTON      "写/读",IDC_CMD_I2C_RW,12,188,60,16
+    RTEXT           "输出长度:",IDC_STATIC,76,188,37,8
+    EDITTEXT        IDC_I2COut,118,188,393,40,ES_MULTILINE | ES_UPPERCASE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    RTEXT           "输入长度:",IDC_STATIC,76,231,37,8
+    EDITTEXT        IDC_I2CIn,118,231,393,40,ES_MULTILINE | ES_UPPERCASE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_I2COutLen,76,200,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_I2CInLen,76,241,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DevInfor,6,22,309,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "开启插入自动打开和移除自动关闭",IDC_EnablePnPAutoOpen,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,379,22,131,12
+    EDITTEXT        IDC_PnPStatus,318,22,37,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "GPIO",IDC_STATIC,6,277,510,62
+    CONTROL         "Gpio0",IDC_EnSet_Gpio0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,146,290,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,146,302,35,9
+    CONTROL         "H/L",IDC_Val_Gpio0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,146,314,35,9
+    CONTROL         "Gpio1",IDC_EnSet_Gpio1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,290,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,302,35,9
+    CONTROL         "H/L",IDC_Val_Gpio1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,314,35,9
+    CONTROL         "Gpio2",IDC_EnSet_Gpio2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,224,290,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,224,302,35,9
+    CONTROL         "H/L",IDC_Val_Gpio2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,224,314,35,9
+    CONTROL         "Gpio3",IDC_EnSet_Gpio3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,263,290,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,263,302,35,9
+    CONTROL         "H/L",IDC_Val_Gpio3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,263,314,35,9
+    CONTROL         "Gpio4",IDC_EnSet_Gpio4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,302,290,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,302,302,35,9
+    CONTROL         "H/L",IDC_Val_Gpio4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,302,314,35,9
+    CONTROL         "Gpio5",IDC_EnSet_Gpio5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,341,290,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,341,302,35,9
+    CONTROL         "H/L",IDC_Val_Gpio5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,341,314,35,9
+    CONTROL         "Gpio6",IDC_EnSet_Gpio6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,380,290,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,380,302,35,9
+    CONTROL         "H/L",IDC_Val_Gpio6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,380,314,35,9
+    CONTROL         "Gpio7",IDC_EnSet_Gpio7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,419,290,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,419,302,35,9
+    CONTROL         "H/L",IDC_Val_Gpio7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,419,313,35,9
+    RTEXT           "使能",IDC_STATIC,80,291,60,8
+    RTEXT           "方向(Out为选中)",IDC_STATIC,80,302,60,8
+    RTEXT           "电平(H为选中)",IDC_STATIC,80,312,60,8
+    PUSHBUTTON      "设置",IDC_SetGpio,12,308,60,16
+    PUSHBUTTON      "获取",IDC_GetGpio,12,291,60,16
+    CONTROL         "全选",IDC_GpioEnableAll,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,460,290,35,9
+    CONTROL         "全选",IDC_GpioSetDirAll,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,460,302,35,9
+    CONTROL         "全选",IDC_GpioSetDataAll,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,460,313,35,9
+END
+
+IDD_FlashEepromDbg DIALOGEX 0, 0, 515, 467
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "CH347SPI Flash Programmer"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "关闭设备",IDC_CloseDevice,367,13,67,16
+    EDITTEXT        IDC_InforShow,5,356,503,90,ES_MULTILINE | ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "清空输出信息",IDC_ClearInfor,427,450,78,16
+    LTEXT           "设备列表:",-1,10,17,38,8
+    COMBOBOX        IDC_ObjList,48,15,244,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "刷新设备列表",IDC_RefreshObjList,296,13,67,16
+    PUSHBUTTON      "Flash型号识别",IDC_FlashIdentify,427,83,78,16
+    PUSHBUTTON      "Flash擦除",IDC_FlashErase,427,137,78,16
+    PUSHBUTTON      "Flash块读",IDC_FlashRead,427,101,78,16
+    PUSHBUTTON      "Flash写",IDC_FlashWrite,427,119,78,16
+    LTEXT           "起始地址:0x",-1,10,62,45,8
+    EDITTEXT        IDC_FlashStartAddr,62,60,72,12,ES_AUTOHSCROLL
+    RTEXT           "长度:0x",-1,144,62,29,8
+    EDITTEXT        IDC_FlashDataSize,177,60,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FlashData,10,77,412,147,ES_MULTILINE | ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "FLASH速度测速",IDC_FlashRWSpeedTest,427,209,78,16
+    PUSHBUTTON      "文件写入FLASH",IDC_WriteFormFile,427,173,78,16
+    PUSHBUTTON      "FLASH读至文件",IDC_ReadToFile,427,155,78,16
+    PUSHBUTTON      "打开设备",IDC_OpenDevice,438,13,67,16
+    GROUPBOX        "USB2.0 SPI <==> Flash(W25Q64)",-1,5,48,503,183
+    PUSHBUTTON      "Flash检验",IDC_FlashVerify,427,191,78,16
+    GROUPBOX        "USB2.0 SPI Config",-1,5,2,503,44
+    COMBOBOX        IDC_SpiCfg_Mode,284,60,52,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SpiCfg_Clock,369,60,52,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "初始化SPI(C0)",IDC_CMD_InitSPI,427,58,78,16
+    RTEXT           "Mode:",-1,261,62,20,8
+    RTEXT           "Clock:",-1,341,62,25,8
+    GROUPBOX        "USB2.0 I2C <==> EEPROM",-1,5,235,503,118
+    LTEXT           "起始地址:0x",-1,12,248,45,8
+    EDITTEXT        IDC_EepromStartAddr,62,246,72,12,ES_AUTOHSCROLL
+    RTEXT           "长度:0x",-1,146,248,29,8
+    EDITTEXT        IDC_EepromDataSize,180,246,33,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_EepromType,427,245,78,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "EEPROM型号:",-1,379,247,44,8
+    EDITTEXT        IDC_EepromData,10,263,412,85,ES_MULTILINE | ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "读",IDC_EepromRead,427,262,78,16
+    PUSHBUTTON      "写",IDC_EepromWrite,427,279,78,16
+    PUSHBUTTON      "文件写入Eeprom",IDC_WriteEepromFormFile,427,313,78,16
+    PUSHBUTTON      "Eeprom读至文件",IDC_ReadEepromToFile,427,296,78,16
+    PUSHBUTTON      "Eeprom检验",IDC_EepromVerify,427,330,78,16
+    EDITTEXT        IDC_DevInfor,12,31,312,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "开启插入自动打开和移除自动关闭",IDC_EnablePnPAutoOpen_Flash,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,374,31,131,12
+    EDITTEXT        IDC_PnPStatus_Flash,330,31,33,12,ES_AUTOHSCROLL
+END
+
+IDD_JtagDebug DIALOGEX 0, 0, 494, 458
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Usb20ToJtag Debug"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    EDITTEXT        IDC_InforShow,6,219,482,213,ES_MULTILINE | ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "JTAG TAP Operation",IDC_STATIC,6,40,482,138
+    PUSHBUTTON      "关闭设备",IDC_CloseDevice,339,4,70,16
+    LTEXT           "设备列表:",IDC_STATIC,6,8,36,8
+    COMBOBOX        IDC_ObjList,42,6,235,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "刷新设备列表",IDC_RefreshObjList,279,4,58,16
+    PUSHBUTTON      "清空输出信息",IDC_ClearInfor,411,438,70,16
+    PUSHBUTTON      "打开设备",IDC_OpenDevice,411,4,70,16
+    EDITTEXT        IDC_JtagOut,134,110,265,29,ES_MULTILINE | ES_UPPERCASE | WS_VSCROLL
+    EDITTEXT        IDC_JtagOutLen,105,110,25,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "JTAG字节写(D3)",IDC_Jtag_ByteWrite,411,110,70,16
+    PUSHBUTTON      "JTAG TAP状态切换",IDC_JtagState_Switch,140,193,109,16
+    COMBOBOX        IDC_JtagTapState,10,195,128,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_JtagInLen,105,143,25,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_JtagIn,134,143,265,29,ES_MULTILINE | ES_UPPERCASE | WS_VSCROLL
+    LTEXT           "字节数据写(小端) 长度:",IDC_JtagOutLenName,15,113,88,8
+    LTEXT           "字节数据读(小端) 长度:",IDC_JtagInLenName,15,146,88,8
+    PUSHBUTTON      "JTAG字节读(D4)",IDC_Jtag_ByteRead,411,143,70,16
+    COMBOBOX        IDC_JtaShiftgChannel,85,52,73,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "JTAG Target初始化",IDC_Jtag_InitTarget,257,193,109,16
+    COMBOBOX        IDC_JtagClockRate,326,53,73,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "JtagConfig(D0)",IDC_JtagIfConfig,411,51,70,16
+    PUSHBUTTON      "通过JTAG下载程序",IDC_Jtag_DnFile_Exam,374,193,109,16
+    GROUPBOX        "Jtag Target Device Operation example",IDC_STATIC,6,182,482,32
+    LTEXT           "读写数据寄存器:",IDC_STATIC,33,54,48,8
+    LTEXT           "JTAG TCK速率:",IDC_STATIC,274,55,52,8
+    PUSHBUTTON      "JTAG位写(D1)",IDC_Jtag_BitWrite,411,69,70,16
+    PUSHBUTTON      "JTAG位读(D2)",IDC_Jtag_BitRead,411,89,70,16
+    COMBOBOX        IDC_DataTransFunc,200,53,70,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_JtagInBitLen,105,91,25,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "二进制数据读(MSB) 位数:",IDC_JtagOutLenName2,10,93,92,8
+    EDITTEXT        IDC_JtagOutBit,134,71,265,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_JtagOutBitLen,105,71,25,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "二进制数据写(MSB) 位数:",IDC_JtagOutLenName3,10,73,92,8
+    EDITTEXT        IDC_JtagInBit,134,91,265,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DevInfor_Jtag,8,22,293,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "开启插入自动打开和移除自动关闭",IDC_EnablePnPAutoOpen_Jtag,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,350,22,131,12
+    EDITTEXT        IDC_PnPStatus_Jtag,305,22,41,12,ES_AUTOHSCROLL
+END
+
+IDD_UartDbg DIALOGEX 0, 0, 519, 471
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "USB 2.0 Uart Debug"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    EDITTEXT        IDC_InforShow,6,322,504,126,ES_MULTILINE | ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "清空输出信息",IDC_ClearInfor,416,451,78,16
+    PUSHBUTTON      "写",IDC_Uart_Write,434,98,67,16
+    GROUPBOX        "串口读",-1,6,184,504,118
+    EDITTEXT        IDC_Uart_WriteData,14,83,414,89,ES_MULTILINE | ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    RTEXT           "写长度:",-1,13,71,33,8
+    EDITTEXT        IDC_Uart_WriteLen,55,69,33,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "关闭设备",IDC_CloseDevice,364,3,67,16
+    LTEXT           "设备列表:",-1,11,7,39,8
+    COMBOBOX        IDC_ObjList,60,5,228,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "刷新设备列表",IDC_RefreshObjList,294,3,67,16
+    PUSHBUTTON      "打开设备",IDC_OpenDevice,434,3,67,16
+    COMBOBOX        IDC_Uart_Baudrate,11,38,77,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Uart_Parity,95,38,77,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Uart_StopBits,177,38,77,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Uart_DataSize,258,37,77,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_Uart_Timeout,396,39,26,13,ES_AUTOHSCROLL
+    LTEXT           "字节超时(ms):",-1,339,41,52,9
+    PUSHBUTTON      "参数设置",IDC_Uart_Set,434,38,67,16
+    PUSHBUTTON      "读",IDC_Uart_Read,434,209,67,16
+    EDITTEXT        IDC_Uart_ReadData,14,209,414,89,ES_MULTILINE | ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    RTEXT           "读长度:",-1,18,197,33,8
+    EDITTEXT        IDC_Uart_ReadLen,55,195,33,12,ES_AUTOHSCROLL
+    LTEXT           "Tx:0,Rx:0",IDC_TotalCntTRx,291,71,135,8
+    PUSHBUTTON      "重置计数",IDC_ResetCnt,434,67,67,16
+    CONTROL         "自动接收至文件",IDC_EnAutoRecvToFile,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,435,233,69,10
+    PUSHBUTTON      "关闭自动接收",IDC_Uart_StopRxThread,434,258,67,16
+    PUSHBUTTON      "发送文件",IDC_UartSendFile,434,115,67,16
+    GROUPBOX        "串口写",-1,7,58,504,118
+    PUSHBUTTON      "停止文件发送",IDC_Uart_StopTxThread,434,134,67,16
+    EDITTEXT        IDC_DevInfor,11,22,279,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "自动接收显示",IDC_EnAutoRecvShow,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,436,245,69,10
+    CONTROL         "开启插入自动打开和移除自动关闭",IDC_EnablePnPAutoOpen_Uart,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,370,22,131,12
+    EDITTEXT        IDC_PnPStatus_Uart,296,22,63,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_Main                ICON                    "Main.ICO"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_PRAMFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "http://wch.cn"
+            VALUE "FileDescription", "NullWin32App"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "InternalName", "NullWin32App"
+            VALUE "LegalCopyright", "Copyright WCH 2002"
+            VALUE "OriginalFilename", "NullWin32App.exe"
+            VALUE "ProductName", "NullWin32App"
+            VALUE "ProductVersion", "1, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SpiUartI2cDbg, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 469
+    END
+
+    IDD_FlashEepromDbg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 514
+        BOTTOMMARGIN, 458
+    END
+
+    IDD_JtagDebug, DIALOG
+    BEGIN
+        RIGHTMARGIN, 493
+        BOTTOMMARGIN, 457
+    END
+
+    IDD_UartDbg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 518
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "PramFrame"
+    IDS_HELLO               "Hello World!"
+    IDC_PRAMFRAME           "PRAMFRAME"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FlashEepromDbg DIALOGEX 0, 0, 515, 425
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "CH347SPI Flash Programmer"
+FONT 8, "Times New Roman", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Close Dev",IDC_CloseDevice,367,9,67,15
+    EDITTEXT        IDC_InforShow,3,307,506,71,ES_MULTILINE | ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Clear Information",IDC_ClearInfor,424,380,78,15
+    LTEXT           "DevList:",-1,13,14,34,8
+    COMBOBOX        IDC_ObjList,47,12,244,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Refresh Dev",IDC_RefreshObjList,295,9,67,15
+    PUSHBUTTON      "Flash Chip Detect",IDC_FlashIdentify,427,66,78,13
+    PUSHBUTTON      "Flash Erase",IDC_FlashErase,427,110,78,13
+    PUSHBUTTON      "Flash Read",IDC_FlashRead,427,82,78,13
+    PUSHBUTTON      "Flash Write",IDC_FlashWrite,427,97,78,13
+    LTEXT           "Base Addr:0x",-1,10,54,49,8
+    EDITTEXT        IDC_FlashStartAddr,62,51,72,12,ES_AUTOHSCROLL
+    RTEXT           "Length:0x",-1,144,54,37,8
+    EDITTEXT        IDC_FlashDataSize,183,51,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FlashData,9,66,412,116,ES_MULTILINE | ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "FLASH Speed Test",IDC_FlashRWSpeedTest,427,170,78,13
+    PUSHBUTTON      "File Write To FLASH",IDC_WriteFormFile,427,141,78,13
+    PUSHBUTTON      "FLASH Read To File",IDC_ReadToFile,427,126,78,13
+    PUSHBUTTON      "Open Dev",IDC_OpenDevice,437,9,67,15
+    GROUPBOX        "USB2.0 SPI <==> Flash(W25Q64)",-1,4,41,506,152
+    PUSHBUTTON      "Flash Verify",IDC_FlashVerify,427,155,78,13
+    GROUPBOX        "USB2.0 SPI Config",-1,5,2,506,38
+    COMBOBOX        IDC_SpiCfg_Mode,284,51,52,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SpiCfg_Clock,369,51,52,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Initialize SPI(C0)",IDC_CMD_InitSPI,427,50,78,13
+    RTEXT           "Mode:",-1,261,54,20,8
+    RTEXT           "Clock:",-1,341,54,25,8
+    GROUPBOX        "USB2.0 I2C <==> EEPROM",-1,3,197,507,107
+    LTEXT           "Base Addr:0x",-1,12,213,49,8
+    EDITTEXT        IDC_EepromStartAddr,62,211,72,12,ES_AUTOHSCROLL
+    RTEXT           "Length:0x",-1,146,213,37,8
+    EDITTEXT        IDC_EepromDataSize,183,211,33,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_EepromType,427,211,78,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "EEPROM Type:",-1,367,212,56,8
+    EDITTEXT        IDC_EepromData,10,226,412,73,ES_MULTILINE | ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "Read",IDC_EepromRead,427,225,78,13
+    PUSHBUTTON      "Write",IDC_EepromWrite,427,239,78,13
+    PUSHBUTTON      "File Write To Eeprom",IDC_WriteEepromFormFile,427,269,78,13
+    PUSHBUTTON      "Eeprom To File",IDC_ReadEepromToFile,427,254,78,13
+    PUSHBUTTON      "Eeprom Verify",IDC_EepromVerify,428,283,78,13
+    EDITTEXT        IDC_DevInfor,12,27,312,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Insert auto open/remove close",IDC_EnablePnPAutoOpen_Flash,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,371,28,131,9
+    EDITTEXT        IDC_PnPStatus_Flash,330,27,33,12,ES_AUTOHSCROLL
+END
+
+IDD_JtagDebug DIALOGEX 0, 0, 513, 411
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Usb20ToJtag Debug"
+FONT 8, "Times New Roman", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_InforShow,7,215,498,140,ES_MULTILINE | ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "JTAG TAP Operation",IDC_STATIC,7,37,498,142
+    PUSHBUTTON      "Close Dev",IDC_CloseDevice,374,4,58,15
+    LTEXT           "DevList:",IDC_STATIC,10,9,36,9
+    COMBOBOX        IDC_ObjList,45,7,245,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Refresh Dev",IDC_RefreshObjList,303,4,58,15
+    PUSHBUTTON      "Clear Information",IDC_ClearInfor,417,361,77,17
+    PUSHBUTTON      "Open Dev",IDC_OpenDevice,447,4,58,15
+    EDITTEXT        IDC_JtagOut,132,107,265,32,ES_MULTILINE | ES_UPPERCASE | WS_VSCROLL
+    EDITTEXT        IDC_JtagOutLen,103,107,25,13,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "JTAG Bytes Write(D3)",IDC_Jtag_ByteWrite,407,107,88,17
+    PUSHBUTTON      "JTAG TAP State Switch",IDC_JtagState_Switch,139,190,109,17
+    COMBOBOX        IDC_JtagTapState,15,193,121,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_JtagInLen,103,143,25,13,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_JtagIn,132,143,265,32,ES_MULTILINE | ES_UPPERCASE | WS_VSCROLL
+    LTEXT           "Bytes Write(L) Leng:",IDC_JtagOutLenName,34,111,69,9
+    LTEXT           "Bytes Read(L) Leng:",IDC_JtagInLenName,36,146,67,9
+    PUSHBUTTON      "JTAG Bytes Read(D4)",IDC_Jtag_ByteRead,407,143,88,17
+    COMBOBOX        IDC_JtaShiftgChannel,83,49,73,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "JTAG Target Initialization",IDC_Jtag_InitTarget,257,190,109,17
+    COMBOBOX        IDC_JtagClockRate,324,49,73,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "JtagConfig(D0)",IDC_JtagIfConfig,407,46,88,17
+    PUSHBUTTON      "Download Program",IDC_Jtag_DnFile_Exam,373,190,109,17
+    GROUPBOX        "Jtag Target Device Operation Example",IDC_STATIC,7,182,498,30
+    LTEXT           "Data Register:",IDC_STATIC,26,52,56,9
+    LTEXT           "JTAG TCK Speed:",IDC_STATIC,261,52,60,9
+    PUSHBUTTON      "JTAG Bit WriteD1)",IDC_Jtag_BitWrite,407,66,88,17
+    PUSHBUTTON      "JTAG Bit Read(D2)",IDC_Jtag_BitRead,407,85,88,17
+    COMBOBOX        IDC_DataTransFunc,175,49,70,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_JtagInBitLen,103,87,25,13,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Binary data read(MSB) bits:",IDC_JtagOutLenName2,17,90,86,9
+    EDITTEXT        IDC_JtagOutBit,132,69,265,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_JtagOutBitLen,103,69,25,13,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Binary data write(MSB) bits:",IDC_JtagOutLenName3,13,70,90,9
+    EDITTEXT        IDC_JtagInBit,132,87,265,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DevInfor_Jtag,8,21,293,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Insert auto open/remove close dev",IDC_EnablePnPAutoOpen_Jtag,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,374,22,131,13
+    EDITTEXT        IDC_PnPStatus_Jtag,311,21,54,13,ES_AUTOHSCROLL
+END
+
+IDD_SpiUartI2cDbg DIALOGEX 0, 0, 521, 428
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "SPI/I2C Debug"
+FONT 8, "Times New Roman", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Close Dev",IDC_CloseDevice,369,4,67,14
+    EDITTEXT        IDC_InforShow,3,317,510,57,ES_MULTILINE | ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Clear Information",IDC_ClearInfor,417,378,78,16
+    LTEXT           "DevList:",IDC_STATIC,7,8,31,8
+    COMBOBOX        IDC_ObjList,48,6,238,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Refresh Dev",IDC_RefreshObjList,294,4,67,14
+    PUSHBUTTON      "Open Dev",IDC_OpenDevice,446,4,67,14
+    GROUPBOX        "SPI",IDC_STATIC,3,35,510,127
+    PUSHBUTTON      "SPI CS Control(C1)",IDC_CMD_SPICsCtrl,441,59,67,16
+    PUSHBUTTON      "SPI R/W(C2)",IDC_CMD_SPIStream,11,111,60,16
+    PUSHBUTTON      "SPI Read(C3)",IDC_CMD_BulkSpiIn,11,95,60,16
+    PUSHBUTTON      "SPI Write(C4)",IDC_CMD_BulkSpiOut,11,79,60,16
+    COMBOBOX        IDC_SpiCfg_Mode,33,43,35,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SpiCfg_Clock,97,43,37,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SpiCfg_ByteBitOrder,175,43,31,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "ActiveCS RW Delay(us):",IDC_STATIC,169,63,88,8
+    EDITTEXT        IDC_SpiCfg_ActiveDelay,261,61,25,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SpiCfg_ChipIndex,65,61,37,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "EnableCS",IDC_EnableCS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,63,44,8
+    COMBOBOX        IDC_SpiCsStatus,107,61,58,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "DeactiveCS RW Delay(us):(us):",IDC_STATIC,291,63,117,8
+    EDITTEXT        IDC_SpiCfg_DelayDeactive,413,61,25,12,ES_AUTOHSCROLL
+    RTEXT           "Output:",IDC_STATIC,75,79,29,8
+    EDITTEXT        IDC_SpiOut,115,79,393,37,ES_MULTILINE | ES_UPPERCASE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    RTEXT           "Input:",IDC_STATIC,75,120,25,8
+    EDITTEXT        IDC_SpiIn,115,120,393,37,ES_MULTILINE | ES_UPPERCASE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_SpiOutLen,75,90,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SpiInLen,75,129,33,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Initialize SPI(C0)",IDC_CMD_InitSPI,441,41,67,16
+    RTEXT           "SpiOutInInterTime(us):",IDC_STATIC,205,45,89,8
+    EDITTEXT        IDC_SpiCfg_OutInIntervalT,297,43,22,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SpiCfg_CS1Polarity,319,43,52,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Mode:",IDC_STATIC,9,45,20,8
+    RTEXT           "Clock:",IDC_STATIC,71,45,25,8
+    RTEXT           "BitOrder:",IDC_STATIC,135,45,38,8
+    COMBOBOX        IDC_SpiCfg_CS2Polarity,375,43,64,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "I2C",IDC_STATIC,3,165,510,94
+    PUSHBUTTON      "Write/Read",IDC_CMD_I2C_RW,9,176,60,16
+    RTEXT           "Output:",IDC_STATIC,73,176,29,8
+    EDITTEXT        IDC_I2COut,115,176,393,37,ES_MULTILINE | ES_UPPERCASE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    RTEXT           "Input:",IDC_STATIC,73,217,25,8
+    EDITTEXT        IDC_I2CIn,115,217,393,37,ES_MULTILINE | ES_UPPERCASE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_I2COutLen,73,188,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_I2CInLen,73,227,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DevInfor,4,21,309,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Insert auto open/remove close dev",IDC_EnablePnPAutoOpen,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,382,21,131,12
+    EDITTEXT        IDC_PnPStatus,322,21,48,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "GPIO",IDC_STATIC,3,262,510,50
+    CONTROL         "Gpio0",IDC_EnSet_Gpio0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,273,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,285,35,9
+    CONTROL         "H/L",IDC_Val_Gpio0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,297,35,9
+    CONTROL         "Gpio1",IDC_EnSet_Gpio1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,273,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,285,35,9
+    CONTROL         "H/L",IDC_Val_Gpio1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,297,35,9
+    CONTROL         "Gpio2",IDC_EnSet_Gpio2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,273,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,285,35,9
+    CONTROL         "H/L",IDC_Val_Gpio2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,297,35,9
+    CONTROL         "Gpio3",IDC_EnSet_Gpio3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,263,273,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,263,285,35,9
+    CONTROL         "H/L",IDC_Val_Gpio3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,263,297,35,9
+    CONTROL         "Gpio4",IDC_EnSet_Gpio4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,301,273,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,301,285,35,9
+    CONTROL         "H/L",IDC_Val_Gpio4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,301,297,35,9
+    CONTROL         "Gpio5",IDC_EnSet_Gpio5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,341,273,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,341,285,35,9
+    CONTROL         "H/L",IDC_Val_Gpio5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,341,297,35,9
+    CONTROL         "Gpio6",IDC_EnSet_Gpio6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,379,273,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,379,285,35,9
+    CONTROL         "H/L",IDC_Val_Gpio6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,379,297,35,9
+    CONTROL         "Gpio7",IDC_EnSet_Gpio7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,419,273,35,9
+    CONTROL         "Out/In",IDC_Dir_Gpio7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,419,285,35,9
+    CONTROL         "H/L",IDC_Val_Gpio7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,419,297,35,9
+    RTEXT           "Enable",IDC_STATIC,79,273,60,8
+    RTEXT           "Dir(Out Select)",IDC_STATIC,79,285,60,8
+    RTEXT           "Level(H Select)",IDC_STATIC,79,295,60,8
+    PUSHBUTTON      "Set",IDC_SetGpio,11,291,60,16
+    PUSHBUTTON      "Get State",IDC_GetGpio,11,273,60,16
+    CONTROL         "All",IDC_GpioEnableAll,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,459,273,35,9
+    CONTROL         "All",IDC_GpioSetDirAll,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,459,285,35,9
+    CONTROL         "All",IDC_GpioSetDataAll,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,459,297,35,9
+END
+
+IDD_UartDbg DIALOGEX 0, 0, 511, 401
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "USB 2.0 Uart Debug"
+FONT 8, "Times New Roman", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_InforShow,7,290,498,77,ES_MULTILINE | ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Clear Information",IDC_ClearInfor,415,374,78,16
+    PUSHBUTTON      "Write",IDC_Uart_Write,434,85,67,16
+    GROUPBOX        "UART Read",-1,7,169,498,118
+    EDITTEXT        IDC_Uart_WriteData,17,71,414,89,ES_MULTILINE | ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    RTEXT           "Write Leng:",-1,11,62,48,8
+    EDITTEXT        IDC_Uart_WriteLen,59,59,33,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Close Dev",IDC_CloseDevice,366,3,67,14
+    LTEXT           "DevList:",-1,11,7,39,8
+    COMBOBOX        IDC_ObjList,60,5,228,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Refresh Dev",IDC_RefreshObjList,295,3,67,14
+    PUSHBUTTON      "Open Dev",IDC_OpenDevice,438,3,67,14
+    COMBOBOX        IDC_Uart_Baudrate,9,34,77,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Uart_Parity,93,34,77,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Uart_StopBits,175,34,77,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Uart_DataSize,256,33,77,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_Uart_Timeout,386,33,26,13,ES_AUTOHSCROLL
+    LTEXT           "Timeout(ms):",-1,337,37,52,9
+    PUSHBUTTON      "Setting",IDC_Uart_Set,438,30,67,16
+    PUSHBUTTON      "Read",IDC_Uart_Read,435,191,67,16
+    EDITTEXT        IDC_Uart_ReadData,15,191,414,89,ES_MULTILINE | ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    RTEXT           "Read Leng:",-1,17,179,43,8
+    EDITTEXT        IDC_Uart_ReadLen,59,178,33,12,ES_AUTOHSCROLL
+    LTEXT           "Tx:0,Rx:0",IDC_TotalCntTRx,293,61,135,8
+    PUSHBUTTON      "Reset Count",IDC_ResetCnt,435,57,67,16
+    CONTROL         "Receive To File",IDC_EnAutoRecvToFile,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,437,215,61,10
+    PUSHBUTTON      "Close Show",IDC_Uart_StopRxThread,435,241,67,16
+    PUSHBUTTON      "Send File",IDC_UartSendFile,434,102,67,16
+    GROUPBOX        "UART Write",-1,7,49,498,118
+    PUSHBUTTON      "Stop File Send",IDC_Uart_StopTxThread,434,121,67,16
+    EDITTEXT        IDC_DevInfor,9,19,279,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Receive Show",IDC_EnAutoRecvShow,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,437,227,59,10
+    CONTROL         "Insert auto open/remove close dev",IDC_EnablePnPAutoOpen_Uart,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,374,19,131,12
+    EDITTEXT        IDC_PnPStatus_Uart,297,19,63,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FlashEepromDbg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 514
+        BOTTOMMARGIN, 423
+    END
+
+    IDD_JtagDebug, DIALOG
+    BEGIN
+        RIGHTMARGIN, 511
+        BOTTOMMARGIN, 406
+    END
+
+    IDD_SpiUartI2cDbg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 517
+        BOTTOMMARGIN, 427
+    END
+
+    IDD_UartDbg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 510
+        BOTTOMMARGIN, 395
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
