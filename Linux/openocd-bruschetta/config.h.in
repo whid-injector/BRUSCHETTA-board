@@ -1,0 +1,330 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define if building universal (internal helper macro) */
+#undef AC_APPLE_UNIVERSAL_BUILD
+
+/* 0 if you don't want am335xgpio. */
+#undef BUILD_AM335XGPIO
+
+/* 0 if you don't want the Amontec JTAG-Accelerator driver. */
+#undef BUILD_AMTJTAGACCEL
+
+/* 0 if you do not want the Olimex ARM-JTAG-EW Programmer. */
+#undef BUILD_ARMJTAGEW
+
+/* 0 if you don't want at91rm9200. */
+#undef BUILD_AT91RM9200
+
+/* 0 if you don't want bcm2835gpio. */
+#undef BUILD_BCM2835GPIO
+
+/* 0 if you don't want the Buspirate JTAG driver. */
+#undef BUILD_BUSPIRATE
+
+/* 0 if you do not want the Mode 3 of the CH347 devices. */
+#undef BUILD_CH347
+
+/* 0 if you do not want the CMSIS-DAP Compliant Debugger. */
+#undef BUILD_CMSIS_DAP_HID
+
+/* 0 if you do not want the CMSIS-DAP v2 Compliant Debugger. */
+#undef BUILD_CMSIS_DAP_USB
+
+/* 0 if you don't want dummy driver. */
+#undef BUILD_DUMMY
+
+/* 0 if you don't want ep93xx. */
+#undef BUILD_EP93XX
+
+/* 0 if you do not want the Espressif JTAG Programmer. */
+#undef BUILD_ESP_USB_JTAG
+
+/* 0 if you do not want the Bitbang mode of FT232R based devices. */
+#undef BUILD_FT232R
+
+/* 0 if you do not want the MPSSE mode of FTDI based devices. */
+#undef BUILD_FTDI
+
+/* 0 if you don't want the Gateworks GW16012 driver. */
+#undef BUILD_GW16012
+
+/* 0 if you want the High Level JTAG driver. */
+#undef BUILD_HLADAPTER
+
+/* 0 if you do not want the TI ICDI JTAG Programmer. */
+#undef BUILD_HLADAPTER_ICDI
+
+/* 0 if you do not want the Nu-Link Programmer. */
+#undef BUILD_HLADAPTER_NULINK
+
+/* 0 if you do not want the ST-Link Programmer. */
+#undef BUILD_HLADAPTER_STLINK
+
+/* 0 if you don't want imx_gpio. */
+#undef BUILD_IMX_GPIO
+
+/* 0 if you do not want the SEGGER J-Link Programmer. */
+#undef BUILD_JLINK
+
+/* 0 if you don't want JTAG DPI. */
+#undef BUILD_JTAG_DPI
+
+/* 0 if you don't want JTAG VPI. */
+#undef BUILD_JTAG_VPI
+
+/* 0 if you do not want the Cypress KitProg Programmer. */
+#undef BUILD_KITPROG
+
+/* 0 if you do not want the Linux GPIO bitbang through libgpiod. */
+#undef BUILD_LINUXGPIOD
+
+/* 0 if you do not want the eStick/opendous JTAG Programmer. */
+#undef BUILD_OPENDOUS
+
+/* 0 if you do not want the OpenJTAG Adapter. */
+#undef BUILD_OPENJTAG
+
+/* 0 if you do not want the OSBDM (JTAG only) Programmer. */
+#undef BUILD_OSBDM
+
+/* 0 if you don't want parport. */
+#undef BUILD_PARPORT
+
+/* 0 if you do not want the ASIX Presto Adapter. */
+#undef BUILD_PRESTO
+
+/* 0 if you don't want the Remote Bitbang JTAG driver. */
+#undef BUILD_REMOTE_BITBANG
+
+/* 0 if you do not want the Raisonance RLink JTAG Programmer. */
+#undef BUILD_RLINK
+
+/* 0 if you don't want to debug BlueField SoC via rshim. */
+#undef BUILD_RSHIM
+
+/* 0 if you don't want SysfsGPIO driver. */
+#undef BUILD_SYSFSGPIO
+
+/* 0 if you do not want the Keil ULINK JTAG Programmer. */
+#undef BUILD_ULINK
+
+/* 0 if you do not want the USBProg JTAG Programmer. */
+#undef BUILD_USBPROG
+
+/* 0 if you do not want the Altera USB-Blaster Compatible. */
+#undef BUILD_USB_BLASTER
+
+/* 0 if you do not want the Altera USB-Blaster II Compatible. */
+#undef BUILD_USB_BLASTER_2
+
+/* 0 if you don't want Cadence vdebug interface. */
+#undef BUILD_VDEBUG
+
+/* 0 if you do not want the Versaloon-Link JTAG Programmer. */
+#undef BUILD_VSLLINK
+
+/* 0 if you do not want the TI XDS110 Debug Probe. */
+#undef BUILD_XDS110
+
+/* 0 if you don't want Xilinx XVC/PCIe driver. */
+#undef BUILD_XLNX_PCIE_XVC
+
+/* Define to 1 if you have the <arpa/inet.h> header file. */
+#undef HAVE_ARPA_INET_H
+
+/* 0 if you don't have Capstone disassembly framework. */
+#undef HAVE_CAPSTONE
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 if the system has the type `Elf64_Ehdr'. */
+#undef HAVE_ELF64
+
+/* Define to 1 if you have the <elf.h> header file. */
+#undef HAVE_ELF_H
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#undef HAVE_FCNTL_H
+
+/* Define to 1 if you have the `gettimeofday' function. */
+#undef HAVE_GETTIMEOFDAY
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define if your libftdi has ftdi_tcioflush() */
+#undef HAVE_LIBFTDI_TCIOFLUSH
+
+/* Define if you have libusb-1.x */
+#undef HAVE_LIBUSB1
+
+/* Define if your libusb has libusb_get_port_numbers() */
+#undef HAVE_LIBUSB_GET_PORT_NUMBERS
+
+/* Define to 1 if the system has the type `long long int'. */
+#undef HAVE_LONG_LONG_INT
+
+/* Define to 1 if you have the <malloc.h> header file. */
+#undef HAVE_MALLOC_H
+
+/* Define to 1 if you have the <netdb.h> header file. */
+#undef HAVE_NETDB_H
+
+/* Define to 1 if you have the <netinet/in.h> header file. */
+#undef HAVE_NETINET_IN_H
+
+/* Define to 1 if you have the <netinet/tcp.h> header file. */
+#undef HAVE_NETINET_TCP_H
+
+/* Define to 1 if you have the <poll.h> header file. */
+#undef HAVE_POLL_H
+
+/* Define to 1 if you have the `realpath' function. */
+#undef HAVE_REALPATH
+
+/* Define to 1 if stdbool.h conforms to C99. */
+#undef HAVE_STDBOOL_H
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#undef HAVE_STDIO_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the `strndup' function. */
+#undef HAVE_STRNDUP
+
+/* Define to 1 if you have the `strnlen' function. */
+#undef HAVE_STRNLEN
+
+/* Define to 1 if you have the <sys/ioctl.h> header file. */
+#undef HAVE_SYS_IOCTL_H
+
+/* Define to 1 if you have the <sys/io.h> header file. */
+#undef HAVE_SYS_IO_H
+
+/* Define to 1 if you have the <sys/param.h> header file. */
+#undef HAVE_SYS_PARAM_H
+
+/* Define to 1 if you have the <sys/select.h> header file. */
+#undef HAVE_SYS_SELECT_H
+
+/* Define to 1 if you have the <sys/socket.h> header file. */
+#undef HAVE_SYS_SOCKET_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/sysctl.h> header file. */
+#undef HAVE_SYS_SYSCTL_H
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#undef HAVE_SYS_TIME_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to 1 if the system has the type `unsigned long long int'. */
+#undef HAVE_UNSIGNED_LONG_LONG_INT
+
+/* Define to 1 if you have the `usleep' function. */
+#undef HAVE_USLEEP
+
+/* Define to 1 if the system has the type `_Bool'. */
+#undef HAVE__BOOL
+
+/* 0 if not building for Cygwin. */
+#undef IS_CYGWIN
+
+/* 0 if not building for Darwin. */
+#undef IS_DARWIN
+
+/* 0 if not building for Mingw. */
+#undef IS_MINGW
+
+/* 0 if not building for Win32. */
+#undef IS_WIN32
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#undef LT_OBJDIR
+
+/* Define to 1 if assertions should be disabled. */
+#undef NDEBUG
+
+/* Must declare 'environ' to use it. */
+#undef NEED_ENVIRON_EXTERN
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* 0 if you don't want parport to use giveio. */
+#undef PARPORT_USE_GIVEIO
+
+/* 0 if you don't want parport to use ppdev. */
+#undef PARPORT_USE_PPDEV
+
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
+#undef STDC_HEADERS
+
+/* Version number of package */
+#undef VERSION
+
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+#  undef WORDS_BIGENDIAN
+# endif
+#endif
+
+/* Include malloc free space in logging */
+#undef _DEBUG_FREE_SPACE_
+
+/* Print verbose USB communication messages */
+#undef _DEBUG_USB_COMMS_
+
+/* Print verbose USB I/O messages */
+#undef _DEBUG_USB_IO_
+
+/* Use GNU C library extensions (e.g. stdndup). */
+#undef _GNU_SOURCE
+
+/* Define to empty if `const' does not conform to ANSI C. */
+#undef const
