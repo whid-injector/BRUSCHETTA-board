@@ -16,11 +16,18 @@ You just need to move the Level Shifter Jumper to the target's voltage BEFORE co
 **Drivers Installation**<br>
 Before plugging the BRUSCHETTA-board on a Windows OS do install the driver CH341PAR.EXE<br>
 
-**OpenOCD**<br>
+**UART**<br>
+Putty https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html<br>
+
+**JTAG - OpenOCD**<br>
 A precompiled version of OpenOCD compatible with BRUSCHETTA-board is already availabvle in this repo<br>
 
-**MultiProgrammer v.1.40** <br>
+**SPI/I2C - MultiProgrammer v.1.40** <br>
 (from http://www.yaojiedianzi.com/index.php?m=Product&a=show&id=19)<br>
+
+**SPI - Flashrom**<br>
+Flashrom 1.4.0dev build for windows x64
+https://github.com/therealdreg/flashrom_build_windows_x64<br>
 
 
 ## Linux
@@ -32,6 +39,9 @@ The following steps were succesfully tested on Ubuntu 22.04:<br>
 ```sudo update-ca-certificates```<br>
 ```sudo apt-get install libtool pkg-config texinfo libusb-dev libusb-1.0.0-dev libftdi-dev autoconf automake make git libftdi* libhidapi-hidraw0 libudev-dev python3-sphinx```<br>
 
+**UART**<br>
+```sudo screen /dev/ttyACM0 115200```<br>
+
 **SPI - Flashrom**<br>
 ```git clone https://github.com/flashrom/flashrom```<br>
 ```cd flashrom```<br>
@@ -40,6 +50,8 @@ The following steps were succesfully tested on Ubuntu 22.04:<br>
 
 ```sudo ./flashrom -p ch347_spi  -r firmware.bin```<br>
 
+**SPI - SPI-NAND PROG**<br>
+https://github.com/981213/spi-nand-prog<br>
 
 **JTAG & SWD - OpenOCD**<br>
 
