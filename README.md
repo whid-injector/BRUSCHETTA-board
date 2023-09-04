@@ -1,23 +1,29 @@
-# BRUSCHETTA-board
- The Multi-Protocol Swiss-Army-Knife for Hardware Hackers
+# BRUSCHETTA-board🥷🏴‍☠️<br>
+⚠️THE Multi-Protocol Swiss-Army-Knife you wanna have around your Hardware Hacking Lab⚠️<br>
+
+ <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/f1694cbb-7c0c-4142-8442-79680e0e944c" width=25% height=25%/>
 
 ## Operating Modes<br>
-BRUSCHETTA-board has 4 Operating Modes, however the ones that you will need most are Mode 2 (UART1+I2C+SPI-VCP) and Mode 4 (UART1+JTAG).<br>
-To switch between them you have to set use the DPI-switch S1 & S2:<br>
-- Mode 2 (UART1+I2C+SPI-VCP): S1=ON and S2=OFF 
-- Mode 4 (UART1+JTAG): S1=ON and S2=ON
+BRUSCHETTA-board has 4 Operating Modes, however the ones that you will need most are Mode 2 (UART1+I2C+SPI-VCP) and Mode 4 (UART1+JTAG).
+**To switch between them you have to set use the DPI-switch S1 & S2:<br>**
+
+**- Mode 2 (UART1+I2C+SPI-VCP): S1=ON and S2=OFF<br>**
+    Before starting using your BRUSCHETTA-Board as SPI or I2C Programmer... you will have to change the mode:
+    
+          • Switch it to Mode-2 by setting the DIP switch S1 to ON and the S2 to OFF (see image below);
+          
+          • Set the target voltage level (which in the case below was 3.3V);
+          
+          • Set the Jumper of the Chip Select to CS0.
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/0be6ca79-f1db-4f6c-9b9e-a3f860b249fd" width=50% height=50%>          
+
+**- Mode 4 (UART1+JTAG): S1=ON and S2=ON<br>**
+    To use it as UART and JTAG debugger (both working at the same time) you will have to set both S1 & S2 to ON.
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/7b73cc58-cfcb-4b18-8761-c7fafe5ad335" width=50% height=50%>       
   
 ## Level Shifters<br>
 A nice feature of BRUSCHETTA-board that makes it perfect for Hardware Hackers is the fact it mounts Level Shifters.<br>
 No matter if you have to use it for UART, JTAG, SPI or I2C... if you target is working at 1.8V, 2.5V, 3.3V or 5V... BRUSCHETTA-board is here to help you! You just need to move the Level Shifter Jumper to the target's voltage BEFORE connecting it to the device and the PC.<br>
-
-Before starting using your BRUSCHETTA-Board as SPI or I2C Programmer... you will have to change the mode:<br>
-• Switch it to Mode-2 by setting the DIP switch S1 to ON and the S2 to OFF (see image below);<br>
-• Set the target voltage level (which in the case below was 3.3V);<br>
-• Set the Jumper of the Chip Select to CS0.<br>
-
-![SPI + I2C Mode](https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/0be6ca79-f1db-4f6c-9b9e-a3f860b249fd)
-
 
 ## Windows<br>
 **Drivers Installation**<br>
@@ -56,6 +62,10 @@ The following steps were succesfully tested on Ubuntu 22.04:<br>
 (optional) ```sudo make install```<br>
 
 ```sudo ./flashrom -p ch347_spi  -r firmware.bin```<br>
+
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/3ba68eb7-e318-4760-b154-95917c2f38bd" width=50% height=50%>    
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/2af54feb-efc5-4644-9cb2-f7e20ebb9d87" width=50% height=50%>    
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/ef859ba9-cab9-4095-8459-991dc8e9b767" width=50% height=50%>  
 
 **SPI - SPI-NAND PROG**<br>
 https://github.com/981213/spi-nand-prog<br>
