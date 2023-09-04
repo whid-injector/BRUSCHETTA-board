@@ -112,7 +112,7 @@ Now copy bruschetta-openocd.cfg in ```/home/<YOUR-USER>/Desktop/BRUSCHETTA-Board
 In case you plan to use BRUSCHETTA-Board on a VM I do recommend to enable the USB3.0 controller.<br><br>
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/c9aeed2c-0e41-426e-8d66-d4f831928d09" width=50% height=50%>    
 
-
+## 3D Printed Case
 In this repo you can find the STL CAD file to print your own case for BRUSCHETTA-board. <br>
 Ifyou do not own a 3D printer... there are plenty of cheap services out there. <br>
 If you live in EU, I do love the guys from [Craftrum](https://www.craftrum.eu), they already printed ton of cases for me 🥇<br>
