@@ -109,7 +109,7 @@ Now copy bruschetta-openocd.cfg in ```/home/<YOUR-USER>/Desktop/BRUSCHETTA-Board
 
 
 ## Tips & Tricks
-In case you plan to use BRUSCHETTA-Board on a VM I do reccomend to enable the USB3.0 controller.<br><br>
+In case you plan to use BRUSCHETTA-Board on a VM I do recommend to enable the USB3.0 controller.<br><br>
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/c9aeed2c-0e41-426e-8d66-d4f831928d09" width=50% height=50%>    
 
 
