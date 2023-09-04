@@ -3,9 +3,11 @@
 
  <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/f1694cbb-7c0c-4142-8442-79680e0e944c" width=25% height=25%/>
 
-⚠️ **IMPORTANT REMINDER** ⚠️
+ Bruschetta-Board has been designed by [Luca Bongiorni](https://www.linkedin.com/in/lucabongiorni) and made available by the awesome guys from https://www.aprbrother.com/ for any hardware hacker out there that is looking for a fairly-priced all-in-one debugger & programmer that supports: UART, JTAG, I2C & SPI protocols and allows to interact with different targets' voltages (i.e., 1.8, 2.5, 3.3 and 5 Volts!).<br>
+
+⚠️ **IMPORTANT REMINDER** ⚠️<br>
 If you plan to use the BRUSCHETTA-Board as UART and/or JTAG debugger REMEMBER to first unplug any I2C and SPI device that may keep busy the data lines!!!
-Otherwise it will create communication issues!!!
+Otherwise it will create communication issues!!!<br>
 
 ## Operating Modes<br>
 BRUSCHETTA-board has 4 Operating Modes, however the ones that you will need most are Mode 2 (UART1+I2C+SPI-VCP) and Mode 4 (UART1+JTAG).
@@ -19,11 +21,11 @@ BRUSCHETTA-board has 4 Operating Modes, however the ones that you will need most
           • Set the target voltage level (which in the case below was 3.3V);
           
           • Set the Jumper of the Chip Select to CS0.
-<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/0be6ca79-f1db-4f6c-9b9e-a3f860b249fd" width=50% height=50%>          
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/0be6ca79-f1db-4f6c-9b9e-a3f860b249fd" width=50% height=50%>     <br>     
 
 **- Mode 4 (UART1+JTAG): S1=ON and S2=ON<br>**
     To use it as UART and JTAG debugger (both working at the same time) you will have to set both S1 & S2 to ON.
-<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/7b73cc58-cfcb-4b18-8761-c7fafe5ad335" width=50% height=50%>       
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/7b73cc58-cfcb-4b18-8761-c7fafe5ad335" width=50% height=50%>     <br>  
   
 ## Level Shifters<br>
 A nice feature of BRUSCHETTA-board that makes it perfect for Hardware Hackers is the fact it mounts Level Shifters.<br>
@@ -40,7 +42,9 @@ Putty https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html<br>
 A precompiled version of OpenOCD compatible with BRUSCHETTA-board is already availabvle in this repo<br>
 
 **SPI/I2C - MultiProgrammer v.1.40** <br>
-(from http://www.yaojiedianzi.com/index.php?m=Product&a=show&id=19)<br>
+(from http://www.yaojiedianzi.com/index.php?m=Product&a=show&id=19)<br><br>
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/db57f811-07ab-4031-b96f-db75cecf6954" width=50% height=50%>    <br>
+
 
 **SPI - Flashrom**<br>
 Flashrom 1.4.0dev build for windows x64
@@ -70,6 +74,7 @@ The following steps were succesfully tested on Ubuntu 22.04:<br>
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/3ba68eb7-e318-4760-b154-95917c2f38bd" width=50% height=50%>    
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/2af54feb-efc5-4644-9cb2-f7e20ebb9d87" width=50% height=50%>    
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/ef859ba9-cab9-4095-8459-991dc8e9b767" width=50% height=50%>  
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/9d257f83-c7e6-4f09-893e-5c9420d4c2dc" width=50% height=50%> <br>   <br>
 
 **SPI - SPI-NAND PROG**<br>
 https://github.com/981213/spi-nand-prog<br>
@@ -89,7 +94,8 @@ https://github.com/WCHSoftGroup/ch347<br>
 
 Now copy bruschetta-openocd.cfg in ```/home/<YOUR-USER>/Desktop/BRUSCHETTA-Board/openocd-ch347/bin```<br>
 
-```sudo ./openocd -f bruschetta-openocd.cfg -f TARGET.cfg```<br>
+```sudo ./openocd -f bruschetta-openocd.cfg -f TARGET.cfg```<br><br>
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/44c17039-921e-4596-84ba-48286b8e5eac" width=50% height=50%>    <br>
 
 
 **I2C - Ch347eeprom**<br>
@@ -98,4 +104,11 @@ Now copy bruschetta-openocd.cfg in ```/home/<YOUR-USER>/Desktop/BRUSCHETTA-Board
 ```make```<br>
 
 
-```sudo ./ch347eeprom -v -s 24c08 -r firmware.bin```<br>
+```sudo ./ch347eeprom -v -s 24c08 -r firmware.bin```<br><br>
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/38bc9723-4d0a-4910-af89-9ad3948a940e" width=50% height=50%>    <br>
+
+
+## Tips & Tricks
+In case you plan to use BRUSCHETTA-Board on a VM I do reccomend to enable the USB3.0 controller.<br><br>
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/c9aeed2c-0e41-426e-8d66-d4f831928d09" width=50% height=50%>    
+
