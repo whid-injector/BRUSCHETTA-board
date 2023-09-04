@@ -9,8 +9,15 @@ To switch between them you have to set use the DPI-switch S1 & S2:<br>
   
 ## Level Shifters<br>
 A nice feature of BRUSCHETTA-board that makes it perfect for Hardware Hackers is the fact it mounts Level Shifters.<br>
-No matter if you have to use it for UART, JTAG, SPI or I2C... if you target is working at 1.8V, 2.5V, 3.3V or 5V... BRUSCHETTA-board is here to help you!<br>
-You just need to move the Level Shifter Jumper to the target's voltage BEFORE connecting it to the device and the PC.<br>
+No matter if you have to use it for UART, JTAG, SPI or I2C... if you target is working at 1.8V, 2.5V, 3.3V or 5V... BRUSCHETTA-board is here to help you! You just need to move the Level Shifter Jumper to the target's voltage BEFORE connecting it to the device and the PC.<br>
+
+Before starting using your BRUSCHETTA-Board as SPI or I2C Programmer... you will have to change the mode:<br>
+• Switch it to Mode-2 by setting the DIP switch S1 to ON and the S2 to OFF (see image below);<br>
+• Set the target voltage level (which in the case below was 3.3V);<br>
+• Set the Jumper of the Chip Select to CS0.<br>
+
+![SPI + I2C Mode](https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/0be6ca79-f1db-4f6c-9b9e-a3f860b249fd)
+
 
 ## Windows<br>
 **Drivers Installation**<br>
