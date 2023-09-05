@@ -1,7 +1,8 @@
-# BRUSCHETTA-board🥷🏴‍☠️<br>
+# BRUSCHETTA-board<br>
 ⚠️THE Multi-Protocol Swiss-Army-Knife you wanna have around your Hardware Hacking Lab⚠️<br>
 
- <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/f1694cbb-7c0c-4142-8442-79680e0e944c" width=25% height=25%/>
+ <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/c217cd65-412f-4deb-9f48-1b7af13be2f7" width=25% height=25%/>
+
 
  Bruschetta-Board has been designed by [Luca Bongiorni](https://www.linkedin.com/in/lucabongiorni) and made available by the awesome guys from https://www.aprbrother.com/ for any hardware hacker out there that is looking for a fairly-priced all-in-one debugger & programmer that supports: UART, JTAG, I2C & SPI protocols and allows to interact with different targets' voltages (i.e., 1.8, 2.5, 3.3 and 5 Volts!).<br>
 
