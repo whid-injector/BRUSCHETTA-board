@@ -97,7 +97,7 @@ Now copy bruschetta-openocd.cfg in ```/home/<YOUR-USER>/Desktop/BRUSCHETTA-Board
 
 
 **I2C - Ch347eeprom**<br>
-```git clone https://github.com/minkione/ch347eeprom```<br>
+```git clone https://github.com/whid-injector/ch347eeprom```<br>
 ```cd ch347eeprom```<br>
 ```make```<br>
 
