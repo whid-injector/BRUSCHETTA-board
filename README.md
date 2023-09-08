@@ -56,7 +56,7 @@ A precompiled version of OpenOCD compatible with BRUSCHETTA-board is already ava
 
 **SPI - Flashrom**<br>
 Flashrom 1.4.0dev build for windows x64
-https://github.com/therealdreg/flashrom_build_windows_x64<br>
+https://github.com/whid-injector/flashrom_build_windows_x64<br>
 
 
 ## Linux
