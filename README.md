@@ -1,4 +1,4 @@
-# BRUSCHETTA-board<br>
+# BRUSCHETTA-board
 ⚠️THE Multi-Protocol Swiss-Army-Knife you wanna have around your Hardware Hacking Lab⚠️<br>
 
 **Available already assembled and ready for hacking at:**
@@ -25,7 +25,7 @@ For more info... ➡ https://www.whid.ninja/store <br><br>
 
 
 
-⚠️ **IMPORTANT REMINDER** ⚠️<br>
+⚠️ **IMPORTANT REMINDER** ⚠️
 If you plan to use the BRUSCHETTA-Board as UART and/or JTAG debugger REMEMBER to first unplug any I2C and SPI device that may keep busy the data lines!!!
 Otherwise it will create communication issues!!!<br>
 
@@ -47,11 +47,11 @@ BRUSCHETTA-board has 4 Operating Modes, however the ones that you will need most
     To use it as UART and JTAG debugger (both working at the same time) you will have to set both S1 & S2 to ON.
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/blob/main/images/Mode%204%20-%20UART%20and%20JTAG.jpg" width=50% height=50%>     <br>  
   
-## Level Shifters<br>
+## Level Shifters
 A nice feature of BRUSCHETTA-board that makes it perfect for Hardware Hackers is the fact it mounts Level Shifters.<br>
 No matter if you have to use it for UART, JTAG, SPI or I2C... if you target is working at 1.8V, 2.5V, 3.3V or 5V... BRUSCHETTA-board is here to help you! You just need to move the Level Shifter Jumper to the target's voltage BEFORE connecting it to the device and the PC.<br>
 
-## Windows<br>
+## Windows
 **Drivers Installation**<br>
 Before plugging the BRUSCHETTA-board on a Windows OS do install the driver CH341PAR.EXE<br>
 
