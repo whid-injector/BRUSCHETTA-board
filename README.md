@@ -8,8 +8,7 @@
 * [Ebay](https://www.ebay.com/itm/256207986212) <br>
 * [Alibaba](https://www.alibaba.com/product-detail/BURSCHETTA-Board-a-Multi-Protocol-Swiss_1600938879092.html) <br>
 * [AprBrother store](https://store.aprbrother.com/product/bruschetta-board) <br>
-* [KSEC store](https://labs.ksec.co.uk/product/burschetta-board-a-multi-protocol-swiss-army-knife-for-hardware-hacking-that-supports-uart-jtag-spi-i2c/
-) EUROPE <br>
+* [KSEC store](https://labs.ksec.co.uk/product/burschetta-board-a-multi-protocol-swiss-army-knife-for-hardware-hacking-that-supports-uart-jtag-spi-i2c/) Europe <br>
 
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/blob/main/images/THE%20GIF.gif" width=25% height=25%/>
 
