@@ -29,7 +29,7 @@ For more info... ➡ https://www.whid.ninja/store <br><br>
 If you plan to use the BRUSCHETTA-Board as UART and/or JTAG debugger REMEMBER to first unplug any I2C and SPI device that may keep busy the data lines!!!
 Otherwise it will create communication issues!!!<br>
 
-## Operating Modes<br>
+## Operating Modes
 BRUSCHETTA-board has 4 Operating Modes, however the ones that you will need most are Mode 2 (UART1+I2C+SPI-VCP) and Mode 4 (UART1+JTAG).
 **To switch between them you have to set use the DPI-switch S1 & S2:<br>**
 
