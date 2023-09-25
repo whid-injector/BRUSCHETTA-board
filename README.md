@@ -133,7 +133,7 @@ If you live in EU, I do love the guys from [Craftrum](https://www.craftrum.eu), 
 https://s.click.aliexpress.com/e/_DFY8wcn <br>
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/21575245-8296-4e93-9a1f-955bf56e8e4e" width=50% height=50%>    <br>
 
-https://www.aliexpress.com/item/1005005709533214.html <br>
+https://s.click.aliexpress.com/e/_DmAewbN <br>
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/e3e6a079-be43-4891-ba33-9f0e9faee293" width=50% height=50%>    <br>
 
 https://s.click.aliexpress.com/e/_DEcb3Zl <br>
