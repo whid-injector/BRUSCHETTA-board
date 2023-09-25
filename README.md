@@ -14,13 +14,11 @@
 
 Bruschetta-Board has been designed by [Luca Bongiorni](https://www.linkedin.com/in/lucabongiorni) and made available by the awesome guys from https://www.aprbrother.com/ for any hardware hacker out there that is looking for a fairly-priced all-in-one debugger & programmer that supports: UART, JTAG, I2C & SPI protocols and allows to interact with different targets' voltages (i.e., 1.8, 2.5, 3.3 and 5 Volts!).<br>
 
-
 ## WHID's Trainings
 The 𝙊𝙛𝙛𝙚𝙣𝙨𝙞𝙫𝙚 𝙃𝙖𝙧𝙙𝙬𝙖𝙧𝙚 𝙃𝙖𝙘𝙠𝙞𝙣𝙜 𝙏𝙧𝙖𝙞𝙣𝙞𝙣𝙜 is a Self-Paced training including Videos, a printed Workbook and a cool Hardware Hackit Kit. And... you get everything shipped home Worldwide! 🌍🔥😎<br>
 For more info... ➡ https://www.whid.ninja/store <br><br>
 
 [![WHID's Trainings](https://files.gandi.ws/64/2e/642e05f6-84e1-48fe-8a59-d678c7d635e3.PNG)](https://www.youtube.com/watch?v=zbUuBZJIHkE)
-
 
 ## Operating Modes
 BRUSCHETTA-board has 4 Operating Modes, however the ones that you will need most are Mode 2 (UART1+I2C+SPI-VCP) and Mode 4 (UART1+JTAG).
@@ -131,3 +129,15 @@ In this repo you can find the STL CAD file to print your own case for BRUSCHETTA
 Ifyou do not own a 3D printer... there are plenty of cheap services out there. <br>
 If you live in EU, I do love the guys from [Craftrum](https://www.craftrum.eu), they already printed ton of cases for me 🥇<br>
 
+## Compatible SOP8 & SOP16 Adaptors
+https://s.click.aliexpress.com/e/_DFY8wcn <br>
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/21575245-8296-4e93-9a1f-955bf56e8e4e" width=50% height=50%>    <br>
+
+https://www.aliexpress.com/item/1005005709533214.html <br>
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/e3e6a079-be43-4891-ba33-9f0e9faee293" width=50% height=50%>    <br>
+
+https://s.click.aliexpress.com/e/_DEcb3Zl <br>
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/b90da7b9-58e0-4b17-a58b-c8d496bca79d" width=50% height=50%>    <br>
+
+https://www.aliexpress.com/item/1005005709533214.html <br>
+<img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/aaec8cd1-3615-4089-9931-4b4a7f478b36" width=50% height=50%>    <br>
