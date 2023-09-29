@@ -10,7 +10,7 @@
 * [AprBrother store](https://store.aprbrother.com/product/bruschetta-board) <br>
 * [KSEC store](https://labs.ksec.co.uk/product/burschetta-board-a-multi-protocol-swiss-army-knife-for-hardware-hacking-that-supports-uart-jtag-spi-i2c/) Europe <br>
 
-<img src="https://github.com/whid-injector/BRUSCHETTA-board/blob/main/images/THE%20GIF.gif" width=25% height=25%/>
+[![BRUSCHETTAboard & PIZZAbite](https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/e0e543af-b171-4921-b60d-bb3ba9d2db4a)](https://www.youtube.com/watch?v=r7BOBPbq83M)
 
 Bruschetta-Board has been designed by [Luca Bongiorni](https://www.linkedin.com/in/lucabongiorni) and made available by the awesome guys from https://www.aprbrother.com/ for any hardware hacker out there that is looking for a fairly-priced all-in-one debugger & programmer that supports: UART, JTAG, I2C & SPI protocols and allows to interact with different targets' voltages (i.e., 1.8, 2.5, 3.3 and 5 Volts!).<br>
 
