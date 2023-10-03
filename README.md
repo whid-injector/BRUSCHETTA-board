@@ -141,3 +141,16 @@ https://s.click.aliexpress.com/e/_DEcb3Zl <br>
 
 https://www.aliexpress.com/item/1005005709533214.html <br>
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/aaec8cd1-3615-4089-9931-4b4a7f478b36" width=50% height=50%>    <br>
+
+# How to report bugs:
+I won't spend time explaining in depth how to report issues, since I am pretty sure you have done it tons of times. 
+The main idea can be summed up in the following points:
+1. Expected Behavior
+2. Unexpected Behavior
+3. which OS you using?
+4. (Windows) Did you install the drivers before connecting?
+5. (Windows) DDid you try all the tools? Multiprogrammer, BruschettaTool.exe and Flashrom?
+6. (Windows) D Is the SPI/I2C flash connected properly? Is on-PCB? Or detached from the DUT?
+7. Is the target computer an Apple Product?
+8. Is the target USB port an USB3.0?
+9. Eventual Explanation Notes, Screenshots, Videos, etc.
