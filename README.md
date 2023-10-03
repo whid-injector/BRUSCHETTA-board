@@ -149,8 +149,8 @@ The main idea can be summed up in the following points:
 2. Unexpected Behavior
 3. which OS you using?
 4. (Windows) Did you install the drivers before connecting?
-5. (Windows) DDid you try all the tools? Multiprogrammer, BruschettaTool.exe and Flashrom?
-6. (Windows) D Is the SPI/I2C flash connected properly? Is on-PCB? Or detached from the DUT?
+5. (Windows) Did you try all the tools? Multiprogrammer, BruschettaTool.exe and Flashrom?
+6. (Windows) Is the SPI/I2C flash connected properly? Is on-PCB? Or detached from the DUT?
 7. Is the target computer an Apple Product?
 8. Is the target USB port an USB3.0?
 9. Eventual Explanation Notes, Screenshots, Videos, etc.
