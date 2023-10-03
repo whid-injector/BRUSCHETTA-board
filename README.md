@@ -59,6 +59,7 @@ A precompiled version of OpenOCD compatible with BRUSCHETTA-board is already ava
 **SPI/I2C - MultiProgrammer v.1.40** <br>
 (from http://www.yaojiedianzi.com/index.php?m=Product&a=show&id=19)<br><br>
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/blob/main/images/windows%20multi%20programmer.png" width=50% height=50%>    <br>
+To change language see below: <br>
 <img src="https://github.com/whid-injector/BRUSCHETTA-board/assets/26245612/5bad4100-f24a-4bc8-bcb3-e911c24a6729" width=50% height=50%>    <br>
 
 **SPI - Flashrom**<br>
