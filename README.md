@@ -129,6 +129,7 @@ In case you plan to use BRUSCHETTA-Board on a VM I do recommend to enable the US
 In this repo you can find the STL CAD file to print your own case for BRUSCHETTA-board. <br>
 Ifyou do not own a 3D printer... there are plenty of cheap services out there. <br>
 If you live in EU, I do love the guys from [Craftrum](https://www.craftrum.eu), they already printed ton of cases for me 🥇<br>
+The screws used are a 2x6mm Flat-Head Screws (e.g. https://s.click.aliexpress.com/e/_DEYh5yR) <br>
 
 ## Compatible SOP8 & SOP16 Adaptors
 https://s.click.aliexpress.com/e/_DFY8wcn <br>
