@@ -94,8 +94,9 @@ https://github.com/981213/spi-nand-prog<br>
 
 **JTAG & SWD - OpenOCD**<br>
 
-This is the official repo from the IC manufacturer, however I do recommend to use the openocd repo within mine Github repository since it was succesfully compiled and tested with BRUSCHETTA-board <br>
-https://github.com/WCHSoftGroup/ch347<br>
+This (https://github.com/WCHSoftGroup/ch347) is the official repo from the IC manufacturer, however I do recommend to use the openocd repo within mine Github repository since it was succesfully compiled and tested with BRUSCHETTA-board <br>
+**In the remote case the version on this repo is not working or throws errors while compiling... try this backup version I tested succesfully on any Debian-based OS.**<br>
+SHA256: 9c1d7fd0c6d421055c53c09fb08393fc53e692a4e8439d7a9fb3033153a114ea - https://drive.google.com/file/d/1FZnYCx8WNRhuipZTbB328IyGrrb9FRwi/view?usp=sharing<br>
 
 ```cd ~/Desktop```<br>
 ```git clone https://github.com/whid-injector/BRUSCHETTA-Board```<br>
