@@ -99,7 +99,9 @@ https://github.com/WCHSoftGroup/ch347<br>
 
 ```cd ~/Desktop```<br>
 ```git clone https://github.com/whid-injector/BRUSCHETTA-Board```<br>
-```cd BRUSCHETTA-Board/Linux/openocd-bruschetta```<br>
+```cd BRUSCHETTA-Board```<br>
+```mkdir openocd-ch347```<br>
+```cd Linux/openocd-bruschetta```<br>
 ```./bootstrap```<br>
 ```./configure --prefix=/home/<YOUR-USER>/Desktop/BRUSCHETTA-Board/openocd-ch347 --disable-doxygen-html --disable-doxygen-pdf --disable-gccwarnings --disable-wextra --enable-ch347```<br>
 ```make -j 4```<br>
