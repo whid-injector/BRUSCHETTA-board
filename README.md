@@ -3,7 +3,7 @@
 
 **Available already assembled and ready for hacking at:**
 
-* [Aliexpress](https://www.aliexpress.com/item/1005006010220678.html) <br>
+* [Aliexpress](https://s.click.aliexpress.com/e/_DBktY1B) <br>
 * [Tindie](https://www.tindie.com/products/aprbrother/bruschetta-board/) <br>
 * [Ebay](https://www.ebay.com/itm/256207986212) <br>
 * [Alibaba](https://www.alibaba.com/product-detail/BURSCHETTA-Board-a-Multi-Protocol-Swiss_1600938879092.html) <br>
